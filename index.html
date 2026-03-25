@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+<meta name="viewport" content="width=device-width">
+    <style>
+	header{
+		color:black;
+		padding:20px;
+		background-color:lightgoldenrodyellow;
+		text-align:center;
+		}
+	nav{
+		display:flex;
+		justify-content:space-evenly;
+		
+	}
+	nav a{
+		background-color:black;
+		border:2px solid black;
+		display:flex;
+		color:white;
+	}
+	nav a:hover{
+		color:white;
+	}
+
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+	    background-image:url('image.jpg');      
+            background-position:right;  
+            background-repeat: no-repeat;
+	    background-size:cover;
+	    width:100%;
+	    height:auto;
+            display:block;
+} 
+
+        .box {
+            width: 300px;
+            background: white;
+            padding: 15px;
+            margin: 30px; /* keeps it on left */
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input, select {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background: orange;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+  /Responsive CSS/
+@media (max-width:768px){
+nav{
+flex-direction:column;
+text-align:center;
+}
+.container{
+flex-direction:column;
+}
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+<h1>Railway Reservation </h1>
+<p>Book your trains for future tours</p>
+
+<hr><nav>
+<a href="index.html">Home</a>
+<a href="#">Meals</a>
+<a href="contact.html">Contact</a>
+</nav></hr>
+</header>
+
+<div class="box">
+    <h2>BOOK TICKET</h2>
+
+    From:
+    <input type="text" placeholder="Enter source">
+
+    To:
+    <input type="text" placeholder="Enter destination">
+
+    Date:
+    <input type="date">
+
+    Class:
+    <select>
+        <option>All Classes</option>
+    </select>
+
+    Quota:
+    <select>
+        <option>General</option>
+    </select>
+
+    <br>
+    <input type="checkbox"> Disability Concession <br>
+    <input type="checkbox"> Flexible Date <br>
+    <input type="checkbox"> Railway Pass <br>
+
+    <button>Search Trains</button>
+</div>
+
+</body>
+</html>
